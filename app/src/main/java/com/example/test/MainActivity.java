@@ -34,9 +34,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if ( edit_text_identifiant.getText().toString().equals("test") && edit_text_mdp.getText().toString().equals("test")) {
-                    Intent gameActivityIntent = new Intent(MainActivity.this, GameActivity.class);
-                    startActivity(gameActivityIntent);
+                    Intent intent = new Intent(MainActivity.this , GameActivity.class);
+                    startActivity(intent);
+                    finish();
                   //  validerFormulaire();
+                  //  Toast.makeText(MainActivity.this,"OK", Toast.LENGTH_LONG).show();
                 }
                 else {
                     Toast.makeText(MainActivity.this,"identifiant ou mot de passe incorect", Toast.LENGTH_LONG).show();

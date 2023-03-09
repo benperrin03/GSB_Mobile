@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="MainActivity">
+    tools:context="MainActivity"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
 
         <TextView
-            android:id="@id/mGreetingTextView"
+            android:id="@+id/mGreetingTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Formulaire:" />
@@ -25,6 +21,8 @@
             android:id="@+id/edit_text_identifiant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="30dp"
             android:hint="identifiant" />
 
 
@@ -34,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:textSize="30dp"
             android:hint="Mot de passe" />
 
         <Button
@@ -42,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="Valider" />
 
-    </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
